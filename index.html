@@ -5,6 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>かんたん 備えのしおり｜突然に備える終活ポータル</title>
   <meta name="description" content="エンディングノートの書き方、相続・デジタル終活・ペット終活・死後事務まで。本人も家族も安心できる終活の総合情報サイトです。">
+  <meta name="keywords" content="終活,エンディングノート,相続,遺言書,デジタル終活,死後事務,成年後見,ペット終活,葬儀,リビングウィル">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://nisijima0719-lang.github.io/shukatsu-portal/">
+  <!-- OGP -->
+  <meta property="og:title" content="かんたん 備えのしおり｜突然に備える終活ポータル">
+  <meta property="og:description" content="エンディングノートの書き方から相続・デジタル終活・ペットの引き継ぎまで。本人も家族も安心できる終活の総合情報サイト。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nisijima0719-lang.github.io/shukatsu-portal/">
+  <meta property="og:image" content="https://nisijima0719-lang.github.io/shukatsu-portal/illust.png">
+  <meta property="og:site_name" content="かんたん 備えのしおり">
+  <meta property="og:locale" content="ja_JP">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="かんたん 備えのしおり｜突然に備える終活ポータル">
+  <meta name="twitter:description" content="エンディングノートの書き方から相続・デジタル終活・ペットの引き継ぎまで。本人も家族も安心できる終活の総合情報サイト。">
+  <meta name="twitter:image" content="https://nisijima0719-lang.github.io/shukatsu-portal/illust.png">
+  <!-- JSON-LD 構造化データ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "かんたん 備えのしおり",
+    "url": "https://nisijima0719-lang.github.io/shukatsu-portal/",
+    "description": "エンディングノートの書き方から相続・デジタル終活・ペットの引き継ぎまで。本人も家族も安心できる終活の総合情報サイト。",
+    "inLanguage": "ja",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://nisijima0719-lang.github.io/shukatsu-portal/#{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
@@ -325,6 +357,46 @@
     .footer-links a { font-size: 0.8125rem; color: rgba(255,255,255,0.55); transition: color 0.2s; }
     .footer-links a:hover { color: #e8c07a; }
     .disclaimer { margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.6875rem; color: rgba(255,255,255,0.35); line-height: 1.7; }
+
+    /* ===== SHARE BAR ===== */
+    body { padding-bottom: 68px; }
+    .share-bar {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 300;
+      background: var(--card-bg); border-top: 2px solid var(--border);
+      box-shadow: 0 -4px 20px rgba(100,70,30,0.12);
+      padding: 10px 16px; display: flex; align-items: center; justify-content: center; gap: 8px;
+      transform: translateY(100%); transition: transform 0.3s ease;
+    }
+    .share-bar.visible { transform: translateY(0); }
+    .share-bar-label { font-size: 0.75rem; color: var(--text-muted); font-weight: 700; white-space: nowrap; margin-right: 4px; }
+    .share-btn {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 8px 16px; border-radius: 50px; font-size: 0.8125rem; font-weight: 700;
+      cursor: pointer; transition: all 0.2s; border: none; text-decoration: none;
+      white-space: nowrap; font-family: 'Zen Maru Gothic', sans-serif;
+    }
+    .share-line { background: #06C755; color: white; }
+    .share-line:hover { background: #05a847; color: white; }
+    .share-fb { background: #1877F2; color: white; }
+    .share-fb:hover { background: #1465d0; color: white; }
+    .share-tw { background: #1a1a1a; color: white; }
+    .share-tw:hover { background: #333; color: white; }
+    .share-copy { background: var(--primary-pale); color: var(--primary); }
+    .share-copy:hover { background: var(--primary); color: white; }
+    .share-print { background: #f0ece6; color: var(--text-muted); }
+    .share-print:hover { background: #e0d8cc; color: var(--text); }
+    @media (max-width: 600px) {
+      .share-bar-label { display: none; }
+      .share-btn { padding: 8px 12px; font-size: 0.75rem; }
+      .share-tw { display: none; }
+    }
+    @media print {
+      .share-bar, header, .quick-nav, .sidebar, nav { display: none !important; }
+      body { padding-bottom: 0; }
+      .page-layout { display: block; }
+      .main-content { max-width: 100%; }
+      section { padding: 20px 0; }
+    }
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 900px) {
@@ -834,6 +906,16 @@
 
 </div><!-- /page-layout -->
 
+<!-- ===== SHARE BAR ===== -->
+<div class="share-bar" id="shareBar">
+  <span class="share-bar-label">📣 友人・家族に伝える</span>
+  <a id="shareLine" href="#" target="_blank" rel="noopener" class="share-btn share-line">LINE</a>
+  <a id="shareFb" href="#" target="_blank" rel="noopener" class="share-btn share-fb">Facebook</a>
+  <a id="shareTw" href="#" target="_blank" rel="noopener" class="share-btn share-tw">X (旧Twitter)</a>
+  <button id="copyBtn" onclick="copyURL()" class="share-btn share-copy">🔗 URLコピー</button>
+  <button onclick="window.print()" class="share-btn share-print">🖨️ 印刷</button>
+</div>
+
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="footer-inner">
@@ -864,9 +946,29 @@
     document.querySelectorAll('.font-btn').forEach(b => b.classList.remove('active'));
     document.querySelector('.font-btn.sz-' + size[0]).classList.add('active');
   }
-  // Restore saved font size
   const saved = localStorage.getItem('fontSize');
   if (saved) setFont(saved);
+
+  // Share bar
+  (function() {
+    const bar = document.getElementById('shareBar');
+    const url = encodeURIComponent(location.href);
+    const title = encodeURIComponent(document.title);
+    document.getElementById('shareLine').href = 'https://social-plugins.line.me/lineit/share?url=' + url;
+    document.getElementById('shareFb').href = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
+    document.getElementById('shareTw').href = 'https://twitter.com/intent/tweet?url=' + url + '&text=' + title;
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) bar.classList.add('visible');
+    }, { passive: true });
+  })();
+
+  function copyURL() {
+    navigator.clipboard.writeText(location.href).then(function() {
+      var btn = document.getElementById('copyBtn');
+      btn.textContent = '✅ コピーしました';
+      setTimeout(function() { btn.textContent = '🔗 URLコピー'; }, 2000);
+    });
+  }
 </script>
 
 </body>

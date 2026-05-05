@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nisijima0719-lang.github.io/shukatsu-portal/sitemap.xml
