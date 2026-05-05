@@ -12,11 +12,14 @@
       --primary: #8b5e3c;
       --primary-light: #b08060;
       --primary-pale: #f5e5d0;
+      --primary-dark: #6a3e1e;
       --accent: #c97b4b;
       --navy: #2c4a6e;
       --bg: #fdf6ed;
+      --bg2: #f8efe2;
+      --bg3: #f3e8d8;
       --card-bg: #fffdf9;
-      --text: #3a2e1e;
+      --text: #2a1e0e;
       --text-muted: #7a6a55;
       --border: #e8ddd0;
       --shadow: 0 4px 16px rgba(100,70,30,0.08);
@@ -32,16 +35,16 @@
       display: flex; align-items: center; gap: 4px;
       background: rgba(255,255,255,0.15); border-radius: 20px; padding: 4px 8px;
     }
-    .font-ctrl span { font-size: 11px; color: rgba(255,255,255,0.7); margin-right: 4px; }
+    .font-ctrl span { font-size: 0.6875rem; color: rgba(255,255,255,0.7); margin-right: 4px; }
     .font-btn {
       border: 1px solid rgba(255,255,255,0.4); background: transparent;
       color: white; border-radius: 12px; cursor: pointer;
-      padding: 3px 10px; transition: all 0.2s; font-family: 'Noto Sans JP', sans-serif;
+      padding: 3px 10px; transition: all 0.2s; font-family: 'Zen Maru Gothic', sans-serif;
     }
     .font-btn:hover, .font-btn.active { background: rgba(255,255,255,0.25); }
-    .font-btn.sz-s { font-size: 11px; }
-    .font-btn.sz-m { font-size: 13px; }
-    .font-btn.sz-l { font-size: 16px; font-weight: 700; }
+    .font-btn.sz-s { font-size: 0.6875rem; }
+    .font-btn.sz-m { font-size: 0.8125rem; }
+    .font-btn.sz-l { font-size: 1rem; font-weight: 700; }
 
     /* ===== HEADER ===== */
     header {
@@ -55,12 +58,12 @@
       padding: 0 20px; height: 64px; gap: 12px;
     }
     .logo { line-height: 1.2; }
-    .logo-main { font-size: 20px; font-weight: 700; letter-spacing: 0.06em; }
-    .logo-main span { color: #a8e6c0; }
-    .logo-sub { font-size: 10px; opacity: 0.8; letter-spacing: 0.04em; }
+    .logo-main { font-size: 1.25rem; font-weight: 700; letter-spacing: 0.06em; }
+    .logo-main span { color: #e8c07a; }
+    .logo-sub { font-size: 0.625rem; opacity: 0.8; letter-spacing: 0.04em; }
     nav { display: flex; gap: 2px; }
     nav a {
-      color: rgba(255,255,255,0.85); font-size: 12px; font-weight: 500;
+      color: rgba(255,255,255,0.85); font-size: 0.75rem; font-weight: 500;
       padding: 6px 10px; border-radius: 20px; transition: all 0.2s; white-space: nowrap;
     }
     nav a:hover { background: rgba(255,255,255,0.15); color: white; }
@@ -77,19 +80,19 @@
       display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center;
     }
     .hero-badge {
-      display: inline-block; background: rgba(74,124,89,0.12);
-      border: 1px solid rgba(74,124,89,0.3); border-radius: 20px; color: var(--primary);
-      font-size: 12px; padding: 4px 14px; margin-bottom: 16px;
+      display: inline-block; background: rgba(139,94,60,0.12);
+      border: 1px solid rgba(139,94,60,0.3); border-radius: 20px; color: var(--primary);
+      font-size: 0.75rem; padding: 4px 14px; margin-bottom: 16px;
     }
-    .hero h1 { font-size: clamp(26px, 4vw, 42px); font-weight: 700; line-height: 1.3; margin-bottom: 6px; color: var(--navy); }
-    .hero-sub { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
-    .hero p { font-size: 15px; color: var(--text-muted); max-width: 480px; margin-bottom: 28px; }
+    .hero h1 { font-size: clamp(1.625rem, 4vw, 2.625rem); font-weight: 700; line-height: 1.3; margin-bottom: 6px; color: var(--navy); }
+    .hero-sub { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 24px; }
+    .hero p { font-size: 0.9375rem; color: var(--text-muted); max-width: 480px; margin-bottom: 28px; }
     .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
-    .btn { display: inline-block; padding: 12px 24px; border-radius: 50px; font-size: 14px; font-weight: 700; transition: all 0.2s; font-family: 'Zen Maru Gothic', sans-serif; }
+    .btn { display: inline-block; padding: 12px 24px; border-radius: 50px; font-size: 0.875rem; font-weight: 700; transition: all 0.2s; font-family: 'Zen Maru Gothic', sans-serif; }
     .btn-primary { background: var(--primary); color: white; }
-    .btn-primary:hover { background: #2d5c3a; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
     .btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
-    .btn-outline:hover { background: rgba(44,74,110,0.08); transform: translateY(-2px); }
+    .btn-outline:hover { background: rgba(139,94,60,0.08); transform: translateY(-2px); }
     .hero-illust { flex-shrink: 0; }
     .hero-illust img { max-width: 560px; width: 100%; border-radius: 16px; display: block; mix-blend-mode: multiply; opacity: 0.72; }
 
@@ -101,7 +104,7 @@
     .quick-nav-inner { max-width: 1200px; margin: 0 auto; display: flex; }
     .quick-nav a {
       display: inline-flex; align-items: center; gap: 5px;
-      padding: 13px 16px; font-size: 13px; font-weight: 500;
+      padding: 13px 16px; font-size: 0.8125rem; font-weight: 500;
       color: var(--text-muted); border-bottom: 3px solid transparent; transition: all 0.2s;
     }
     .quick-nav a:hover { color: var(--primary); border-bottom-color: var(--primary-light); }
@@ -128,7 +131,7 @@
       box-shadow: var(--shadow);
     }
     .sidebar-title {
-      font-size: 13px; font-weight: 700; color: var(--navy);
+      font-size: 0.8125rem; font-weight: 700; color: var(--navy);
       border-bottom: 2px solid var(--primary-pale); padding-bottom: 10px; margin-bottom: 14px;
       display: flex; align-items: center; gap: 6px;
     }
@@ -140,16 +143,16 @@
     .aff-item:hover { background: var(--primary-pale); border-color: var(--primary-light); }
     .aff-item a { display: block; text-decoration: none; }
     .aff-item-top { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
-    .aff-emoji { font-size: 20px; flex-shrink: 0; }
-    .aff-name { font-size: 12px; font-weight: 700; color: var(--navy); line-height: 1.3; }
-    .aff-desc { font-size: 11px; color: var(--text-muted); line-height: 1.4; }
+    .aff-emoji { font-size: 1.25rem; flex-shrink: 0; }
+    .aff-name { font-size: 0.75rem; font-weight: 700; color: var(--navy); line-height: 1.3; }
+    .aff-desc { font-size: 0.6875rem; color: var(--text-muted); line-height: 1.4; }
     .aff-btn-small {
-      display: block; text-align: center; background: var(--accent);
-      color: white; font-size: 11px; font-weight: 700; padding: 5px 8px;
+      display: block; text-align: center; background: var(--primary);
+      color: white; font-size: 0.6875rem; font-weight: 700; padding: 5px 8px;
       border-radius: 6px; transition: all 0.2s;
     }
-    .aff-item:hover .aff-btn-small { background: #a8603a; }
-    .sidebar-note { font-size: 10px; color: #aaa; text-align: center; margin-top: 10px; line-height: 1.5; }
+    .aff-item:hover .aff-btn-small { background: var(--primary-dark); }
+    .sidebar-note { font-size: 0.625rem; color: #aaa; text-align: center; margin-top: 10px; line-height: 1.5; }
 
     /* ===== SECTION COMMON ===== */
     section { padding: 52px 24px; }
@@ -157,11 +160,11 @@
     .section-label {
       display: inline-flex; align-items: center; gap: 6px;
       background: var(--primary-pale); color: var(--primary);
-      font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px;
+      font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 20px;
       margin-bottom: 10px; letter-spacing: 0.05em;
     }
-    .section-title { font-size: clamp(20px, 3.5vw, 28px); font-weight: 700; margin-bottom: 6px; color: var(--navy); }
-    .section-desc { color: var(--text-muted); font-size: 14px; margin-bottom: 32px; }
+    .section-title { font-size: clamp(1.25rem, 3.5vw, 1.75rem); font-weight: 700; margin-bottom: 6px; color: var(--navy); }
+    .section-desc { color: var(--text-muted); font-size: 0.875rem; margin-bottom: 32px; }
 
     /* ===== CARD GRID ===== */
     .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
@@ -171,15 +174,15 @@
       transition: transform 0.2s, box-shadow 0.2s;
     }
     .card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(100,70,30,0.12); }
-    .card-icon { font-size: 30px; margin-bottom: 10px; }
-    .card h3 { font-size: 16px; font-weight: 700; margin-bottom: 7px; color: var(--navy); }
-    .card p { font-size: 13px; color: var(--text-muted); margin-bottom: 14px; line-height: 1.7; }
+    .card-icon { font-size: 1.875rem; margin-bottom: 10px; }
+    .card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 7px; color: var(--navy); }
+    .card p { font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 14px; line-height: 1.7; }
     .card-link {
       display: inline-flex; align-items: center; gap: 4px;
-      color: var(--primary); font-size: 13px; font-weight: 600;
+      color: var(--primary); font-size: 0.8125rem; font-weight: 600;
       padding: 7px 14px; background: var(--primary-pale); border-radius: 8px; transition: all 0.2s;
     }
-    .card-link:hover { background: var(--primary-light); color: white; }
+    .card-link:hover { background: var(--primary); color: white; }
 
     /* ===== ニュース ===== */
     #news { background: var(--card-bg); border-bottom: 1px solid var(--border); }
@@ -194,11 +197,11 @@
       background: linear-gradient(135deg, #2c4a6e 0%, #8b5e3c 100%);
       padding: 14px 18px; color: white;
     }
-    .news-tag { display: inline-block; background: rgba(255,255,255,0.2); font-size: 11px; padding: 2px 9px; border-radius: 12px; margin-bottom: 7px; }
-    .news-card-header h3 { font-size: 14px; font-weight: 700; line-height: 1.5; }
+    .news-tag { display: inline-block; background: rgba(255,255,255,0.2); font-size: 0.6875rem; padding: 2px 9px; border-radius: 12px; margin-bottom: 7px; }
+    .news-card-header h3 { font-size: 0.875rem; font-weight: 700; line-height: 1.5; }
     .news-card-body { padding: 14px 18px; }
-    .news-card-body p { font-size: 13px; color: var(--text-muted); line-height: 1.7; }
-    .news-date { font-size: 11px; color: #aaa; margin-top: 8px; }
+    .news-card-body p { font-size: 0.8125rem; color: var(--text-muted); line-height: 1.7; }
+    .news-date { font-size: 0.6875rem; color: #aaa; margin-top: 8px; }
     .knowledge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; margin-top: 28px; }
     .knowledge-card {
       background: var(--card-bg); border-radius: 12px; padding: 18px;
@@ -210,85 +213,84 @@
       transform: translateY(-3px); box-shadow: 0 6px 20px rgba(100,70,30,0.13);
       border-color: var(--primary);
     }
-    .knowledge-card .k-icon { font-size: 26px; margin-bottom: 8px; }
-    .knowledge-card h4 { font-size: 14px; font-weight: 700; margin-bottom: 5px; color: var(--navy); }
-    .knowledge-card p { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
-    .knowledge-card .k-more { font-size: 11px; font-weight: 700; color: var(--primary); }
+    .knowledge-card .k-icon { font-size: 1.625rem; margin-bottom: 8px; }
+    .knowledge-card h4 { font-size: 0.875rem; font-weight: 700; margin-bottom: 5px; color: var(--navy); }
+    .knowledge-card p { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 8px; }
+    .knowledge-card .k-more { font-size: 0.6875rem; font-weight: 700; color: var(--primary); }
 
     /* ===== 本人向け ===== */
-    #honnin { background: var(--bg); }
+    #honnin { background: var(--bg2); }
     .ending-note-box {
-      background: linear-gradient(135deg, #e8f5ec 0%, #d0ecd8 100%);
+      background: linear-gradient(135deg, #f5e5d0 0%, #eddcc4 100%);
       border-radius: var(--radius); padding: 28px; margin-bottom: 28px;
       display: grid; grid-template-columns: 1fr auto; gap: 20px; align-items: center;
-      border: 1px solid #b8dcc4;
+      border: 1px solid #d8c4a0;
     }
-    .ending-note-box h3 { font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
-    .ending-note-box p { font-size: 13px; color: #444; }
-    .ending-note-box ul { margin-top: 10px; padding-left: 18px; font-size: 13px; color: #555; }
+    .ending-note-box h3 { font-size: 1.125rem; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .ending-note-box p { font-size: 0.8125rem; color: var(--text); }
+    .ending-note-box ul { margin-top: 10px; padding-left: 18px; font-size: 0.8125rem; color: var(--text); }
     .btn-green {
       background: var(--primary); color: white; padding: 11px 22px;
-      border-radius: 50px; font-size: 13px; font-weight: 700; white-space: nowrap; transition: all 0.2s;
+      border-radius: 50px; font-size: 0.8125rem; font-weight: 700; white-space: nowrap; transition: all 0.2s;
       display: inline-block;
     }
-    .btn-green:hover { background: #2d5c3a; transform: translateY(-2px); }
+    .btn-green:hover { background: var(--primary-dark); transform: translateY(-2px); }
     .steps { display: flex; flex-direction: column; gap: 14px; margin-top: 20px; }
     .step {
       display: flex; gap: 14px; align-items: flex-start;
       background: var(--card-bg); border-radius: 10px; padding: 14px 18px;
-      border-left: 4px solid var(--primary-light); border: 1px solid var(--border);
-      border-left: 4px solid var(--primary-light);
+      border: 1px solid var(--border); border-left: 4px solid var(--primary-light);
     }
     .step-num {
       width: 30px; height: 30px; border-radius: 50%; background: var(--primary); color: white;
-      display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; font-size: 0.8125rem; font-weight: 700; flex-shrink: 0;
     }
-    .step h4 { font-size: 14px; font-weight: 700; margin-bottom: 3px; }
-    .step p { font-size: 13px; color: var(--text-muted); }
+    .step h4 { font-size: 0.875rem; font-weight: 700; margin-bottom: 3px; }
+    .step p { font-size: 0.8125rem; color: var(--text-muted); }
 
     /* ===== 家族向け ===== */
-    #kazoku { background: #f0f5ff; }
+    #kazoku { background: var(--bg3); }
     .alert-box {
-      background: linear-gradient(135deg, #fff8ed 0%, #ffeedd 100%);
-      border: 2px solid #f0c070; border-radius: var(--radius);
+      background: linear-gradient(135deg, #fdf0d8 0%, #f5e4c0 100%);
+      border: 2px solid #d4a060; border-radius: var(--radius);
       padding: 18px 22px; margin-bottom: 24px; display: flex; gap: 12px; align-items: flex-start;
     }
-    .alert-icon { font-size: 22px; flex-shrink: 0; }
-    .alert-box h4 { font-size: 15px; font-weight: 700; color: #c05000; margin-bottom: 3px; }
-    .alert-box p { font-size: 13px; color: #555; }
+    .alert-icon { font-size: 1.375rem; flex-shrink: 0; }
+    .alert-box h4 { font-size: 0.9375rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 3px; }
+    .alert-box p { font-size: 0.8125rem; color: var(--text); }
     .checklist { display: flex; flex-direction: column; gap: 9px; }
     .checklist-item {
       background: var(--card-bg); border-radius: 10px; padding: 13px 16px;
       border: 1px solid var(--border); display: flex; gap: 10px; align-items: flex-start;
     }
-    .check-icon { color: var(--primary); font-size: 16px; flex-shrink: 0; margin-top: 2px; }
-    .checklist-item h4 { font-size: 14px; font-weight: 700; margin-bottom: 2px; }
-    .checklist-item p { font-size: 12px; color: var(--text-muted); }
+    .check-icon { color: var(--primary); font-size: 1rem; flex-shrink: 0; margin-top: 2px; }
+    .checklist-item h4 { font-size: 0.875rem; font-weight: 700; margin-bottom: 2px; }
+    .checklist-item p { font-size: 0.75rem; color: var(--text-muted); }
 
     /* ===== ペット終活 ===== */
-    #pet { background: #fff8f0; }
-    #pet .section-label { background: #fde8d0; color: #a05020; }
+    #pet { background: var(--bg2); }
+    #pet .section-label { background: var(--primary-pale); color: var(--primary); }
     .pet-intro {
-      background: linear-gradient(135deg, #fff3e0 0%, #fde8c8 100%);
-      border: 1px solid #f0c080; border-radius: var(--radius); padding: 20px 24px; margin-bottom: 24px;
+      background: linear-gradient(135deg, #fdf0d8 0%, #f5e4c4 100%);
+      border: 1px solid #d8b888; border-radius: var(--radius); padding: 20px 24px; margin-bottom: 24px;
       display: flex; gap: 14px; align-items: flex-start;
     }
-    .pet-intro-icon { font-size: 36px; flex-shrink: 0; }
-    .pet-intro h3 { font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
-    .pet-intro p { font-size: 13px; color: #555; line-height: 1.7; }
+    .pet-intro-icon { font-size: 2.25rem; flex-shrink: 0; }
+    .pet-intro h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .pet-intro p { font-size: 0.8125rem; color: var(--text); line-height: 1.7; }
     .pet-card {
       background: var(--card-bg); border-radius: var(--radius); padding: 20px;
-      border: 1px solid #f0d8b8; box-shadow: var(--shadow);
+      border: 1px solid var(--border); box-shadow: var(--shadow);
     }
-    .pet-card .card-icon { font-size: 28px; }
-    .pet-card h3 { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 7px; }
-    .pet-card p { font-size: 13px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.7; }
+    .pet-card .card-icon { font-size: 1.75rem; }
+    .pet-card h3 { font-size: 0.9375rem; font-weight: 700; color: var(--navy); margin-bottom: 7px; }
+    .pet-card p { font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 12px; line-height: 1.7; }
     .pet-link {
       display: inline-flex; align-items: center; gap: 4px;
-      color: #a05020; font-size: 13px; font-weight: 600;
-      padding: 6px 14px; background: #fde8d0; border-radius: 8px; transition: all 0.2s;
+      color: var(--primary-dark); font-size: 0.8125rem; font-weight: 600;
+      padding: 6px 14px; background: var(--primary-pale); border-radius: 8px; transition: all 0.2s;
     }
-    .pet-link:hover { background: #f0c080; color: #7a3010; }
+    .pet-link:hover { background: var(--primary-light); color: white; }
 
     /* ===== 民間サービス ===== */
     #services { background: var(--bg); }
@@ -297,29 +299,29 @@
       background: var(--card-bg); border-radius: var(--radius); padding: 22px;
       box-shadow: var(--shadow); border: 1px solid var(--border); display: flex; flex-direction: column;
     }
-    .service-tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 12px; margin-bottom: 12px; }
-    .tag-bank { background: #deeeff; color: #1055a0; }
-    .tag-funeral { background: #fde8ec; color: #a02838; }
-    .tag-law { background: #e4f2e8; color: #2a6838; }
-    .tag-trust { background: #fff0dc; color: #a05010; }
-    .service-card h3 { font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 7px; }
-    .service-card p { font-size: 13px; color: var(--text-muted); line-height: 1.7; flex: 1; }
+    .service-tag { display: inline-block; font-size: 0.6875rem; font-weight: 700; padding: 3px 10px; border-radius: 12px; margin-bottom: 12px; }
+    .tag-bank { background: #ede0c4; color: #6b4415; }
+    .tag-funeral { background: #e8d4cc; color: #6a2a20; }
+    .tag-law { background: #dde4d0; color: #2e4428; }
+    .tag-trust { background: #f0dcc4; color: #7a4010; }
+    .service-card h3 { font-size: 0.9375rem; font-weight: 700; color: var(--navy); margin-bottom: 7px; }
+    .service-card p { font-size: 0.8125rem; color: var(--text-muted); line-height: 1.7; flex: 1; }
     .service-footer { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-    .service-name { font-size: 11px; font-weight: 700; color: #888; }
-    .service-link { font-size: 12px; color: var(--primary); font-weight: 600; }
+    .service-name { font-size: 0.6875rem; font-weight: 700; color: #888; }
+    .service-link { font-size: 0.75rem; color: var(--primary); font-weight: 600; }
     .service-link:hover { text-decoration: underline; }
 
     /* ===== FOOTER ===== */
     footer { background: #1e1a14; color: rgba(255,255,255,0.65); padding: 40px 20px; text-align: center; }
     .footer-inner { max-width: 800px; margin: 0 auto; }
-    .footer-logo { font-size: 18px; font-weight: 700; color: white; margin-bottom: 6px; }
-    .footer-logo span { color: #a8e6c0; }
-    .footer-sub { font-size: 11px; color: rgba(255,255,255,0.4); margin-bottom: 14px; }
-    footer p { font-size: 13px; line-height: 1.8; }
+    .footer-logo { font-size: 1.125rem; font-weight: 700; color: white; margin-bottom: 6px; }
+    .footer-logo span { color: #e8c07a; }
+    .footer-sub { font-size: 0.6875rem; color: rgba(255,255,255,0.4); margin-bottom: 14px; }
+    footer p { font-size: 0.8125rem; line-height: 1.8; }
     .footer-links { display: flex; justify-content: center; gap: 18px; margin-top: 18px; flex-wrap: wrap; }
-    .footer-links a { font-size: 13px; color: rgba(255,255,255,0.55); transition: color 0.2s; }
-    .footer-links a:hover { color: #a8e6c0; }
-    .disclaimer { margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 11px; color: rgba(255,255,255,0.35); line-height: 1.7; }
+    .footer-links a { font-size: 0.8125rem; color: rgba(255,255,255,0.55); transition: color 0.2s; }
+    .footer-links a:hover { color: #e8c07a; }
+    .disclaimer { margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.6875rem; color: rgba(255,255,255,0.35); line-height: 1.7; }
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 900px) {
@@ -563,7 +565,7 @@
           </div>
         </div>
 
-        <h3 style="font-size:17px;font-weight:700;margin:36px 0 14px;color:var(--navy);">💡 役立つ終活豆知識</h3>
+        <h3 style="font-size:1.0625rem;font-weight:700;margin:36px 0 14px;color:var(--navy);">💡 役立つ終活豆知識</h3>
         <div class="knowledge-grid">
           <a href="article-yuigon.html" class="knowledge-card">
             <div class="k-icon">🏛️</div>
@@ -626,7 +628,7 @@
           <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000061944.html" target="_blank" rel="noopener" class="btn-green">📥 公式サイトへ</a>
         </div>
 
-        <h3 style="font-size:18px;font-weight:700;margin-bottom:16px;color:var(--navy);">📌 エンディングノートの書き方 ステップガイド</h3>
+        <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:16px;color:var(--navy);">📌 エンディングノートの書き方 ステップガイド</h3>
         <div class="steps">
           <div class="step"><div class="step-num">1</div><div><h4>基本情報・家族構成を記入する</h4><p>氏名・生年月日・住所・連絡先のほか、家族・親族の連絡先一覧を整理します。救急時にも役立ちます。</p></div></div>
           <div class="step"><div class="step-num">2</div><div><h4>財産・資産情報を整理する</h4><p>銀行口座（金融機関名・支店・口座番号）、不動産、保険、有価証券、借金・ローンなど一覧化します。</p></div></div>
@@ -636,7 +638,7 @@
           <div class="step"><div class="step-num">6</div><div><h4>家族・大切な人へのメッセージ</h4><p>感謝の言葉や想いを伝えるページ。定期的に見直して最新の気持ちを反映させましょう。</p></div></div>
         </div>
 
-        <h3 style="font-size:18px;font-weight:700;margin:36px 0 16px;color:var(--navy);">⚖️ 相続の基礎知識</h3>
+        <h3 style="font-size:1.125rem;font-weight:700;margin:36px 0 16px;color:var(--navy);">⚖️ 相続の基礎知識</h3>
         <div class="card-grid">
           <div class="card"><div class="card-icon">📅</div><h3>相続手続きの期限</h3><p>相続放棄・限定承認は<strong>3か月以内</strong>、相続税申告は<strong>10か月以内</strong>が期限。知らないと大きな損に。</p><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4101.htm" target="_blank" rel="noopener" class="card-link">国税庁で確認 →</a></div>
           <div class="card"><div class="card-icon">🧑‍⚖️</div><h3>法定相続人と相続割合</h3><p>民法で定められた相続順位と割合。配偶者は常に相続人。子・父母・兄弟姉妹の順に相続権があります。</p><a href="https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html" target="_blank" rel="noopener" class="card-link">裁判所サイトで確認 →</a></div>
@@ -659,7 +661,7 @@
             <p>スマートフォンのロック解除ができない、ネットバンクの口座が分からない、SNSアカウントの削除方法が不明…などのトラブルが急増しています。本人が元気なうちに記録を残しておくことが重要です。</p>
           </div>
         </div>
-        <h3 style="font-size:17px;font-weight:700;margin-bottom:14px;color:var(--navy);">📱 デジタル終活チェックリスト</h3>
+        <h3 style="font-size:1.0625rem;font-weight:700;margin-bottom:14px;color:var(--navy);">📱 デジタル終活チェックリスト</h3>
         <div class="checklist">
           <div class="checklist-item"><div class="check-icon">📱</div><div><h4>スマートフォンのロック解除方法を家族に伝える</h4><p>PIN・パターン・生体認証の解除方法を記録。iPhoneは「レガシーコンタクト」機能（iOS 15.2以降）で死後に家族がアクセス可能。</p></div></div>
           <div class="checklist-item"><div class="check-icon">🏦</div><div><h4>ネットバンク・証券口座の一覧を作成</h4><p>楽天銀行・PayPay銀行など非対面口座は家族が把握しにくい。金融機関名・口座番号・ログイン情報を安全な場所に記録。</p></div></div>
@@ -668,7 +670,7 @@
           <div class="checklist-item"><div class="check-icon">💰</div><div><h4>仮想通貨・電子マネーの記録</h4><p>ビットコイン等の仮想通貨はウォレットの秘密鍵がなければ永久にアクセス不能。保有状況を必ず記録しておく。</p></div></div>
           <div class="checklist-item"><div class="check-icon">☁️</div><div><h4>クラウドストレージの写真・データ整理</h4><p>iCloud・Google フォト・Dropboxなど。家族が引き継ぐか削除するかを事前に決めておく。</p></div></div>
         </div>
-        <h3 style="font-size:17px;font-weight:700;margin:32px 0 14px;color:var(--navy);">📋 亡くなった直後の手続きフロー</h3>
+        <h3 style="font-size:1.0625rem;font-weight:700;margin:32px 0 14px;color:var(--navy);">📋 亡くなった直後の手続きフロー</h3>
         <div class="card-grid">
           <div class="card"><div class="card-icon">📅</div><h3>7日以内：死亡届の提出</h3><p>医師の死亡診断書をもって市区町村役所に死亡届を提出。同時に火葬許可証を取得します。</p></div>
           <div class="card"><div class="card-icon">📮</div><h3>14日以内：各種届け出</h3><p>健康保険・年金の資格喪失届、世帯主変更届など。2週間以内が目安の手続きを漏れなく。</p></div>
