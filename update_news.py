@@ -61,6 +61,7 @@ def generate_news_html():
   <div class="news-card-body">
     <p>本文</p>
     <div class="news-date">📅 {today}更新</div>
+    <div class="news-source"><a href="出典URL" target="_blank" rel="noopener">📎 出典：出典名 →</a></div>
   </div>
 </div>
 
@@ -70,7 +71,9 @@ def generate_news_html():
 
 <div class="news-card">
   ...（3件目）
-</div>"""
+</div>
+
+出典URLは厚生労働省・法務省・国税庁・内閣府など実在する日本の公的機関の公式サイトのURLを使用してください。"""
 
     message = client.messages.create(
         model="claude-opus-4-7",
