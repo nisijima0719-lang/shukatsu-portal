@@ -6,7 +6,7 @@
   <title>かんたん 備えのしおり｜突然に備える終活ポータル</title>
   <meta name="description" content="エンディングノートの書き方、相続・デジタル終活・ペット終活・死後事務まで。本人も家族も安心できる終活の総合情報サイトです。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --primary: #4a7c59;
@@ -24,7 +24,7 @@
     }
     html { font-size: 16px; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+    body { font-family: 'Zen Maru Gothic', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
     a { color: inherit; text-decoration: none; }
 
     /* ===== FONT SIZE TOGGLE ===== */
@@ -68,27 +68,28 @@
 
     /* ===== HERO ===== */
     .hero {
-      background: linear-gradient(135deg, #2c4a6e 0%, #4a7c59 60%, #6aaa7a 100%);
-      color: white; padding: 48px 20px 56px; overflow: hidden;
+      background: linear-gradient(135deg, #fdf0d8 0%, #f5e8cc 60%, #ede0c4 100%);
+      color: var(--text); padding: 48px 20px 56px; overflow: hidden;
+      border-bottom: 2px solid #e8d8b8;
     }
     .hero-inner {
       max-width: 1200px; margin: 0 auto;
       display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center;
     }
     .hero-badge {
-      display: inline-block; background: rgba(255,255,255,0.15);
-      border: 1px solid rgba(255,255,255,0.3); border-radius: 20px;
+      display: inline-block; background: rgba(74,124,89,0.12);
+      border: 1px solid rgba(74,124,89,0.3); border-radius: 20px; color: var(--primary);
       font-size: 12px; padding: 4px 14px; margin-bottom: 16px;
     }
-    .hero h1 { font-size: clamp(26px, 4vw, 42px); font-weight: 700; line-height: 1.3; margin-bottom: 6px; }
-    .hero-sub { font-size: 14px; opacity: 0.85; margin-bottom: 24px; }
-    .hero p { font-size: 15px; opacity: 0.9; max-width: 480px; margin-bottom: 28px; }
+    .hero h1 { font-size: clamp(26px, 4vw, 42px); font-weight: 700; line-height: 1.3; margin-bottom: 6px; color: var(--navy); }
+    .hero-sub { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
+    .hero p { font-size: 15px; color: var(--text-muted); max-width: 480px; margin-bottom: 28px; }
     .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
-    .btn { display: inline-block; padding: 12px 24px; border-radius: 50px; font-size: 14px; font-weight: 700; transition: all 0.2s; }
-    .btn-primary { background: white; color: var(--primary); }
-    .btn-primary:hover { background: #e8f5ec; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
-    .btn-outline { background: transparent; color: white; border: 2px solid rgba(255,255,255,0.7); }
-    .btn-outline:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
+    .btn { display: inline-block; padding: 12px 24px; border-radius: 50px; font-size: 14px; font-weight: 700; transition: all 0.2s; font-family: 'Zen Maru Gothic', sans-serif; }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:hover { background: #2d5c3a; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+    .btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+    .btn-outline:hover { background: rgba(44,74,110,0.08); transform: translateY(-2px); }
     .hero-illust { flex-shrink: 0; }
 
     /* ===== QUICK NAV ===== */
@@ -365,8 +366,9 @@
       </div>
     </div>
     <div class="hero-illust">
-      <!-- Hand-drawn style SVG illustration -->
-      <svg width="380" height="260" viewBox="0 0 380 260" xmlns="http://www.w3.org/2000/svg">
+      <!-- イラスト差し替え予定 -->
+      <img id="hero-image" src="" alt="イラスト" style="display:none; max-width:380px; border-radius:16px;">
+      <svg width="380" height="260" viewBox="0 0 380 260" xmlns="http://www.w3.org/2000/svg" style="display:none">
         <rect width="380" height="260" rx="18" fill="#fdf0dc" opacity="0.15"/>
         <!-- House background -->
         <polygon points="140,58 200,22 260,58" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linejoin="round"/>
