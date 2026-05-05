@@ -9,9 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #4a7c59;
-      --primary-light: #6aaa7a;
-      --primary-pale: #e8f2ec;
+      --primary: #8b5e3c;
+      --primary-light: #b08060;
+      --primary-pale: #f5e5d0;
       --accent: #c97b4b;
       --navy: #2c4a6e;
       --bg: #fdf6ed;
@@ -45,7 +45,7 @@
 
     /* ===== HEADER ===== */
     header {
-      background: linear-gradient(135deg, #2c4a6e 0%, #4a7c59 100%);
+      background: linear-gradient(135deg, #2c4a6e 0%, #8b5e3c 100%);
       color: white; position: sticky; top: 0; z-index: 100;
       box-shadow: 0 2px 12px rgba(0,0,0,0.18);
     }
@@ -91,7 +91,7 @@
     .btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
     .btn-outline:hover { background: rgba(44,74,110,0.08); transform: translateY(-2px); }
     .hero-illust { flex-shrink: 0; }
-    .hero-illust img { max-width: 420px; width: 100%; border-radius: 16px; display: block; mix-blend-mode: multiply; }
+    .hero-illust img { max-width: 560px; width: 100%; border-radius: 16px; display: block; mix-blend-mode: multiply; opacity: 0.72; }
 
     /* ===== QUICK NAV ===== */
     .quick-nav {
@@ -108,15 +108,19 @@
 
     /* ===== PAGE LAYOUT (main + sidebar) ===== */
     .page-layout {
-      max-width: 1200px; margin: 0 auto;
-      display: grid; grid-template-columns: 1fr 260px; align-items: start;
+      max-width: 1160px; margin: 0 auto;
+      display: flex; align-items: flex-start;
+      padding: 0;
     }
-    .main-content { min-width: 0; }
+    .main-content { flex: 1; min-width: 0; }
 
     /* ===== SIDEBAR ===== */
     .sidebar {
-      position: sticky; top: 72px;
-      padding: 24px 16px 24px 8px;
+      position: sticky; top: 64px;
+      width: 256px; flex-shrink: 0;
+      height: calc(100vh - 72px); overflow-y: auto;
+      padding: 20px 12px 20px 4px;
+      scrollbar-width: thin;
     }
     .sidebar-inner {
       background: var(--card-bg); border-radius: var(--radius);
@@ -187,7 +191,7 @@
     }
     .news-card:hover { transform: translateY(-3px); }
     .news-card-header {
-      background: linear-gradient(135deg, #2c4a6e 0%, #4a7c59 100%);
+      background: linear-gradient(135deg, #2c4a6e 0%, #8b5e3c 100%);
       padding: 14px 18px; color: white;
     }
     .news-tag { display: inline-block; background: rgba(255,255,255,0.2); font-size: 11px; padding: 2px 9px; border-radius: 12px; margin-bottom: 7px; }
@@ -198,11 +202,18 @@
     .knowledge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; margin-top: 28px; }
     .knowledge-card {
       background: var(--card-bg); border-radius: 12px; padding: 18px;
-      border: 1px solid var(--border);
+      border: 1px solid var(--border); cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      display: block; text-decoration: none; color: inherit;
+    }
+    .knowledge-card:hover {
+      transform: translateY(-3px); box-shadow: 0 6px 20px rgba(100,70,30,0.13);
+      border-color: var(--primary);
     }
     .knowledge-card .k-icon { font-size: 26px; margin-bottom: 8px; }
     .knowledge-card h4 { font-size: 14px; font-weight: 700; margin-bottom: 5px; color: var(--navy); }
-    .knowledge-card p { font-size: 12px; color: var(--text-muted); }
+    .knowledge-card p { font-size: 12px; color: var(--text-muted); margin-bottom: 8px; }
+    .knowledge-card .k-more { font-size: 11px; font-weight: 700; color: var(--primary); }
 
     /* ===== 本人向け ===== */
     #honnin { background: var(--bg); }
@@ -554,36 +565,42 @@
 
         <h3 style="font-size:17px;font-weight:700;margin:36px 0 14px;color:var(--navy);">💡 役立つ終活豆知識</h3>
         <div class="knowledge-grid">
-          <div class="knowledge-card">
+          <a href="article-yuigon.html" class="knowledge-card">
             <div class="k-icon">🏛️</div>
             <h4>法務局の遺言書保管制度</h4>
             <p>自筆証書遺言を法務局で保管。手数料3,900円。相続開始時に自動通知される。</p>
-          </div>
-          <div class="knowledge-card">
+            <span class="k-more">詳しく読む →</span>
+          </a>
+          <a href="article-kouken.html" class="knowledge-card">
             <div class="k-icon">👥</div>
             <h4>成年後見制度の活用</h4>
             <p>判断能力が低下した場合に備え「任意後見」契約を元気なうちに結んでおく。</p>
-          </div>
-          <div class="knowledge-card">
+            <span class="k-more">詳しく読む →</span>
+          </a>
+          <a href="article-ohitorisama.html" class="knowledge-card">
             <div class="k-icon">📮</div>
             <h4>おひとりさまの3点セット</h4>
             <p>「死後事務委任契約」「任意後見契約」「公正証書遺言」の3点が基本の備え。</p>
-          </div>
-          <div class="knowledge-card">
+            <span class="k-more">詳しく読む →</span>
+          </a>
+          <a href="article-sogi.html" class="knowledge-card">
             <div class="k-icon">💸</div>
             <h4>葬儀費用は相続財産から</h4>
             <p>相続財産から葬儀費用を支払うことが慣習的に認められている。領収書は保管を。</p>
-          </div>
-          <div class="knowledge-card">
+            <span class="k-more">詳しく読む →</span>
+          </a>
+          <a href="article-tochi.html" class="knowledge-card">
             <div class="k-icon">🏠</div>
             <h4>相続土地国庫帰属制度</h4>
-            <p>2024年施行。不要な土地を一定条件のもとで国に返すことが可能になった。</p>
-          </div>
-          <div class="knowledge-card">
+            <p>不要な土地を一定条件のもとで国に返すことができる新制度。</p>
+            <span class="k-more">詳しく読む →</span>
+          </a>
+          <a href="article-livingwill.html" class="knowledge-card">
             <div class="k-icon">🩺</div>
             <h4>尊厳死・リビングウィル</h4>
             <p>日本尊厳死協会の「リビングウィル」で延命治療拒否の意思を書面で表明できる。</p>
-          </div>
+            <span class="k-more">詳しく読む →</span>
+          </a>
         </div>
       </div>
     </section>

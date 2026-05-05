@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>成年後見制度の活用法｜かんたん 備えのしおり</title>
+  <meta name="description" content="認知症になっても財産・生活を守る成年後見制度。法定後見・任意後見の違い、費用・手続きの流れをわかりやすく解説します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --primary:#8b5e3c;--primary-light:#b08060;--primary-pale:#f5e5d0;--navy:#2c4a6e;--bg:#fdf6ed;--card-bg:#fffdf9;--text:#3a2e1e;--text-muted:#7a6a55;--border:#e8ddd0;--shadow:0 4px 16px rgba(100,70,30,.08);--radius:14px; }
+    html{font-size:16px;}*{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Zen Maru Gothic',sans-serif;background:var(--bg);color:var(--text);line-height:1.8;}
+    a{color:inherit;text-decoration:none;}
+    header{background:linear-gradient(135deg,#2c4a6e 0%,#8b5e3c 100%);color:white;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.18);}
+    .header-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:64px;}
+    .logo{line-height:1.2;}.logo-main{font-size:18px;font-weight:700;letter-spacing:.06em;}.logo-main span{color:#a8e6c0;}.logo-sub{font-size:10px;opacity:.8;}
+    nav{display:flex;gap:2px;}nav a{color:rgba(255,255,255,.85);font-size:12px;font-weight:500;padding:6px 10px;border-radius:20px;transition:all .2s;}nav a:hover{background:rgba(255,255,255,.15);}
+    .article-hero{background:linear-gradient(135deg,#fdf0d8 0%,#f5e8cc 100%);padding:36px 20px 40px;border-bottom:2px solid #e8d8b8;}
+    .article-hero .inner{max-width:1160px;margin:0 auto;}
+    .breadcrumb{font-size:12px;color:var(--text-muted);margin-bottom:16px;}.breadcrumb a{color:var(--primary);}.breadcrumb a:hover{text-decoration:underline;}
+    .article-tag{display:inline-block;background:var(--primary-pale);color:var(--primary);font-size:11px;font-weight:700;padding:3px 12px;border-radius:20px;margin-bottom:12px;}
+    .article-hero h1{font-size:clamp(20px,4vw,32px);font-weight:700;color:var(--navy);margin-bottom:10px;line-height:1.3;}
+    .article-lead{font-size:14px;color:var(--text-muted);max-width:680px;}
+    .article-layout{max-width:1160px;margin:0 auto;display:flex;align-items:flex-start;}
+    .article-body{flex:1;min-width:0;padding:36px 24px;}
+    .article-body h2{font-size:19px;font-weight:700;color:var(--navy);margin:36px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--primary-pale);}
+    .article-body h3{font-size:15px;font-weight:700;color:var(--primary);margin:22px 0 8px;}
+    .article-body p{font-size:14px;line-height:1.9;margin-bottom:14px;}
+    .article-body ul,.article-body ol{padding-left:22px;margin-bottom:14px;}.article-body li{font-size:14px;line-height:1.8;margin-bottom:4px;}
+    .info-box{background:var(--primary-pale);border-left:4px solid var(--primary);border-radius:8px;padding:16px 20px;margin:20px 0;}
+    .info-box p{margin:0;font-size:14px;}.info-box strong{color:var(--primary);}
+    .warn-box{background:#fff8ed;border-left:4px solid #f0b030;border-radius:8px;padding:16px 20px;margin:20px 0;}
+    .step-list{display:flex;flex-direction:column;gap:12px;margin-bottom:20px;}
+    .step-item{display:flex;gap:14px;align-items:flex-start;background:var(--card-bg);border-radius:10px;padding:14px 18px;border:1px solid var(--border);}
+    .step-num{width:28px;height:28px;border-radius:50%;background:var(--primary);color:white;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;}
+    .step-item h4{font-size:14px;font-weight:700;margin-bottom:3px;}.step-item p{font-size:13px;color:var(--text-muted);margin:0;}
+    .compare-table{width:100%;border-collapse:collapse;margin:20px 0;font-size:13px;}
+    .compare-table th{background:var(--primary);color:white;padding:10px 14px;text-align:left;}
+    .compare-table td{padding:10px 14px;border-bottom:1px solid var(--border);vertical-align:top;}
+    .compare-table tr:nth-child(even) td{background:var(--primary-pale);}
+    .back-link{display:inline-flex;align-items:center;gap:6px;color:var(--primary);font-size:14px;font-weight:700;padding:10px 20px;background:var(--primary-pale);border-radius:50px;margin-top:32px;transition:all .2s;}
+    .back-link:hover{background:var(--primary);color:white;}
+    .sidebar{position:sticky;top:64px;width:256px;flex-shrink:0;height:calc(100vh - 72px);overflow-y:auto;padding:20px 12px 20px 4px;scrollbar-width:thin;}
+    .sidebar-inner{background:var(--card-bg);border-radius:14px;border:1px solid var(--border);padding:18px;box-shadow:var(--shadow);}
+    .sidebar-title{font-size:13px;font-weight:700;color:var(--navy);border-bottom:2px solid var(--primary-pale);padding-bottom:10px;margin-bottom:14px;}
+    .aff-item{display:flex;flex-direction:column;gap:6px;padding:12px 10px;border-radius:10px;margin-bottom:8px;background:var(--bg);border:1px solid var(--border);transition:all .2s;}
+    .aff-item:hover{background:var(--primary-pale);border-color:var(--primary-light);}
+    .aff-item a{display:block;text-decoration:none;}
+    .aff-item-top{display:flex;align-items:center;gap:8px;margin-bottom:4px;}
+    .aff-emoji{font-size:20px;flex-shrink:0;}.aff-name{font-size:12px;font-weight:700;color:var(--navy);line-height:1.3;}
+    .aff-desc{font-size:11px;color:var(--text-muted);line-height:1.4;}
+    .aff-btn-small{display:block;text-align:center;background:var(--primary);color:white;font-size:11px;font-weight:700;padding:5px 8px;border-radius:6px;}
+    .aff-item:hover .aff-btn-small{background:#6a4025;}
+    .sidebar-note{font-size:10px;color:#aaa;text-align:center;margin-top:10px;line-height:1.5;}
+    footer{background:#1e1a14;color:rgba(255,255,255,.65);padding:32px 20px;text-align:center;}
+    .footer-logo{font-size:16px;font-weight:700;color:white;margin-bottom:4px;}.footer-logo span{color:#a8e6c0;}
+    footer p{font-size:13px;}.footer-disclaimer{margin-top:16px;font-size:11px;color:rgba(255,255,255,.35);line-height:1.7;}
+    @media(max-width:900px){.sidebar{display:none;}}@media(max-width:600px){nav{display:none;}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-main">かんたん <span>備えのしおり</span></div>
+      <div class="logo-sub">突然に備える終活ポータル</div>
+    </a>
+    <nav>
+      <a href="index.html#news">📰 ニュース</a>
+      <a href="index.html#honnin">📋 本人向け</a>
+      <a href="index.html#kazoku">👨‍👩‍👧 家族向け</a>
+      <a href="index.html#pet">🐾 ペット</a>
+      <a href="index.html#services">🏦 民間サービス</a>
+    </nav>
+  </div>
+</header>
+
+<div class="article-hero">
+  <div class="inner">
+    <div class="breadcrumb"><a href="index.html">ホーム</a> › 豆知識 › 成年後見制度の活用法</div>
+    <span class="article-tag">⚖️ 制度・法律</span>
+    <h1>成年後見制度の活用法<br>認知症になる前に知っておきたいこと</h1>
+    <p class="article-lead">認知症や障害で判断能力が低下しても、財産と生活を守れる成年後見制度。法定後見・任意後見の違いと、今からできる備えを解説します。</p>
+  </div>
+</div>
+
+<div class="article-layout">
+  <main class="article-body">
+
+    <h2>成年後見制度とは</h2>
+    <p>成年後見制度とは、認知症・知的障害・精神障害などで判断能力が不十分になった人を法律的に支援する制度です。財産管理や介護サービス・施設入所の手続きなど、本人だけでは難しい重要な法律行為を「後見人」が代わりに行います。</p>
+    <p>日本では高齢化の進展に伴い利用者数が増加しており、現在約25万人が利用しています。しかし、制度を知らずに認知症が進んでしまい、必要なときに活用できなかったという事例も少なくありません。</p>
+
+    <h2>2種類の後見制度</h2>
+    <p>成年後見制度には大きく分けて<strong>「法定後見」</strong>と<strong>「任意後見」</strong>の2種類があります。</p>
+
+    <table class="compare-table">
+      <tr><th>項目</th><th>法定後見</th><th>任意後見</th></tr>
+      <tr><td>開始のタイミング</td><td>判断能力が低下した後</td><td>判断能力があるうちに契約</td></tr>
+      <tr><td>後見人を選ぶのは</td><td>家庭裁判所</td><td>本人が自由に選べる</td></tr>
+      <tr><td>後見人になれる人</td><td>親族・弁護士・司法書士など</td><td>信頼できる人なら誰でも</td></tr>
+      <tr><td>費用の目安</td><td>申立費用約1万円〜＋月額報酬</td><td>公正証書作成費用約2万円〜</td></tr>
+    </table>
+
+    <h3>法定後見の3つのレベル</h3>
+    <p>法定後見は判断能力の程度によって3段階に分かれます。</p>
+    <ul>
+      <li><strong>後見</strong>：判断能力がほとんどない状態。後見人が財産管理・法律行為のほぼすべてを代理</li>
+      <li><strong>保佐</strong>：判断能力が著しく不十分な状態。借金・不動産売却などの重要行為に同意権・取消権</li>
+      <li><strong>補助</strong>：判断能力が不十分な状態。特定の行為についてのみ支援</li>
+    </ul>
+
+    <h2>任意後見制度のメリット</h2>
+    <p>判断能力があるうちに自分で後見人と内容を決められる任意後見は、本人の意思を最大限に尊重できる制度です。</p>
+
+    <div class="info-box">
+      <p><strong>任意後見の大きなメリット：</strong>信頼できる家族・友人・専門家を後見人に選べます。法定後見では裁判所が後見人を選ぶため、希望が通らない場合もあります。</p>
+    </div>
+
+    <h3>任意後見契約の内容</h3>
+    <p>任意後見契約では、後見が開始したときに後見人に行ってほしい業務を自分で決めて契約書に記載します。主な内容は次のとおりです。</p>
+    <ul>
+      <li>預貯金・有価証券などの財産管理</li>
+      <li>不動産の管理・売却に関する手続き</li>
+      <li>医療・介護サービスの利用契約</li>
+      <li>入院・施設入所の手続き</li>
+      <li>日常生活に必要な費用の支払い</li>
+      <li>税金の申告・年金の受領</li>
+    </ul>
+
+    <h2>手続きの流れ</h2>
+    <div class="step-list">
+      <div class="step-item"><div class="step-num">1</div><div><h4>後見人候補者を決める</h4><p>家族・親族・友人・司法書士・弁護士・社会福祉士などから信頼できる人を選びます。複数人設定することも可能です。</p></div></div>
+      <div class="step-item"><div class="step-num">2</div><div><h4>任意後見契約書を作成する</h4><p>公証役場で公正証書として作成します。費用は約2〜3万円。契約内容は法務局に登記されます。</p></div></div>
+      <div class="step-item"><div class="step-num">3</div><div><h4>判断能力が低下したら家庭裁判所へ申立て</h4><p>後見人・本人・4親等内の親族などが家庭裁判所に「任意後見監督人選任の申立て」を行います。</p></div></div>
+      <div class="step-item"><div class="step-num">4</div><div><h4>任意後見監督人が選任される</h4><p>家庭裁判所が「任意後見監督人（弁護士・司法書士など）」を選任します。監督人が任意後見人を監視する仕組みです。</p></div></div>
+      <div class="step-item"><div class="step-num">5</div><div><h4>任意後見が開始される</h4><p>監督人の監督下で任意後見人が財産管理・生活支援を開始します。</p></div></div>
+    </div>
+
+    <h2>費用の目安</h2>
+    <h3>任意後見契約締結時</h3>
+    <ul>
+      <li>公正証書作成手数料：約11,000円〜17,000円（財産額による）</li>
+      <li>登記嘱託手数料：1,400円</li>
+      <li>司法書士等への依頼費用：5〜10万円程度（依頼する場合）</li>
+    </ul>
+    <h3>任意後見開始後（月額）</h3>
+    <ul>
+      <li>任意後見監督人への報酬：月額1〜3万円程度（家庭裁判所が決定）</li>
+      <li>任意後見人への報酬：契約で自由に設定（家族なら無報酬も可）</li>
+    </ul>
+
+    <h2>注意すべきポイント</h2>
+    <div class="warn-box">
+      <p>⚠️ <strong>認知症が進んでからでは任意後見契約は結べません。</strong>判断能力があるうちに早めに準備することが重要です。70代になったら検討を始めましょう。</p>
+    </div>
+    <ul>
+      <li>法定後見が始まると、後見人が財産を使い込むトラブルが起きることも。監督体制の確認が重要</li>
+      <li>「後見制度支援信託」を活用すると、日常的に使わない財産を信託銀行で管理できリスクを低減できる</li>
+      <li>任意後見契約と合わせて「見守り契約」「財産管理委任契約」を締結しておくと、契約開始前の見守りも安心</li>
+    </ul>
+
+    <h2>まとめ</h2>
+    <p>成年後見制度は、判断能力が低下した後の「暮らしの安全網」です。特に任意後見制度は、<strong>自分の意思が通じるうちに準備できる</strong>という点で非常に有効です。</p>
+    <p>「まだ元気だから」と先送りにしがちですが、認知症の発症は予測できません。信頼できる人と話し合い、元気なうちに備えておくことが最大の安心につながります。専門家（司法書士・弁護士）への相談も積極的に活用してください。</p>
+
+    <a href="index.html" class="back-link">← ホームに戻る</a>
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-title">📚 関連するおすすめ商品</div>
+      <div class="aff-item">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/5333643f.2082ae32.53336440.f64842fa/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E6%88%90%E5%B9%B4%E5%BE%8C%E8%A6%8B+%E6%9C%AC%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E6%88%90%E5%B9%B4%E5%BE%8C%E8%A6%8B+%E6%9C%AC%2F" target="_blank" rel="nofollow noopener">
+          <div class="aff-item-top"><span class="aff-emoji">⚖️</span><span class="aff-name">成年後見制度 解説本</span></div>
+          <div class="aff-desc">法定後見・任意後見の手続きをわかりやすく解説</div>
+          <span class="aff-btn-small">楽天市場で見る →</span>
+        </a>
+      </div>
+      <div class="aff-item">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/5333643f.2082ae32.53336440.f64842fa/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E8%AA%8D%E7%9F%A5%E7%97%87+%E5%82%99%E3%81%88+%E6%9C%AC%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E8%AA%8D%E7%9F%A5%E7%97%87+%E5%82%99%E3%81%88+%E6%9C%AC%2F" target="_blank" rel="nofollow noopener">
+          <div class="aff-item-top"><span class="aff-emoji">🧠</span><span class="aff-name">認知症への備えガイド</span></div>
+          <div class="aff-desc">認知症になる前・なった後にやるべきことを整理</div>
+          <span class="aff-btn-small">楽天市場で見る →</span>
+        </a>
+      </div>
+      <div class="aff-item">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/5333643f.2082ae32.53336440.f64842fa/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%9B%B8%E7%B6%9A+%E6%89%8B%E7%B6%9A%E3%81%8D+%E6%9C%AC%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%9B%B8%E7%B6%9A+%E6%89%8B%E7%B6%9A%E3%81%8D+%E6%9C%AC%2F" target="_blank" rel="nofollow noopener">
+          <div class="aff-item-top"><span class="aff-emoji">📋</span><span class="aff-name">相続手続き完全ガイド</span></div>
+          <div class="aff-desc">後見・相続・遺言をまとめて解説した実用書</div>
+          <span class="aff-btn-small">楽天市場で見る →</span>
+        </a>
+      </div>
+      <div class="aff-item">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/5333643f.2082ae32.53336440.f64842fa/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%B5%82%E6%B4%BB+%E6%9C%AC%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E7%B5%82%E6%B4%BB+%E6%9C%AC%2F" target="_blank" rel="nofollow noopener">
+          <div class="aff-item-top"><span class="aff-emoji">📚</span><span class="aff-name">終活ガイドブック</span></div>
+          <div class="aff-desc">相続・遺言・葬儀をまとめて解説した入門書</div>
+          <span class="aff-btn-small">楽天市場で見る →</span>
+        </a>
+      </div>
+      <div class="aff-item">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/5333643f.2082ae32.53336440.f64842fa/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%88%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%8E%E3%83%BC%E3%83%88%2F" target="_blank" rel="nofollow noopener">
+          <div class="aff-item-top"><span class="aff-emoji">📓</span><span class="aff-name">エンディングノート</span></div>
+          <div class="aff-desc">財産・医療・葬儀の希望をまとめる専用ノート</div>
+          <span class="aff-btn-small">楽天市場で見る →</span>
+        </a>
+      </div>
+      <div class="aff-item">
+        <a href="https://hb.afl.rakuten.co.jp/hgc/5333643f.2082ae32.53336440.f64842fa/?pc=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E9%87%8D%E8%A6%81%E6%9B%B8%E9%A1%9E+%E9%87%91%E5%BA%AB%2F&m=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%E9%87%8D%E8%A6%81%E6%9B%B8%E9%A1%9E+%E9%87%91%E5%BA%AB%2F" target="_blank" rel="nofollow noopener">
+          <div class="aff-item-top"><span class="aff-emoji">🗄️</span><span class="aff-name">重要書類保管金庫</span></div>
+          <div class="aff-desc">契約書・通帳・印鑑を火災・水害から守る耐火金庫</div>
+          <span class="aff-btn-small">楽天市場で見る →</span>
+        </a>
+      </div>
+      <p class="sidebar-note">※楽天アフィリエイトリンクを含みます</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-logo">かんたん <span>備えのしおり</span></div>
+  <p>突然の備えを、今日から。</p>
+  <div class="footer-disclaimer">※本記事は一般的な情報提供を目的としており、法律・税務上のアドバイスではありません。個別のご相談は専門家にご相談ください。</div>
+</footer>
+</body>
+</html>
